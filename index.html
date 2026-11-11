@@ -383,7 +383,7 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   var PHONE='972524700409', GUIDE='״לילה טוב מתחיל בהיכרות״';
   // GoatCounter site code (e.g. 'rotemguide'). Empty = no counting.
   var GC_CODE='rotemsegal';
-  var FROM_QR=/[?&]src=qr/.test(location.search);
+  var FROM_QR=/[?&]src=qr(&|$)/.test(location.search);
   function count(name,title){
     try{ if(window.goatcounter && goatcounter.count) goatcounter.count({path:name,title:title||name,event:true}) }catch(e){}
   }
