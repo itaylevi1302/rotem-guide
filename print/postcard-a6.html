@@ -1,0 +1,47 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><title>גלויה למקרר A6</title>
+<link rel="stylesheet" href="common.css">
+<style>
+@page{size:105mm 148mm;margin:0}
+.page{width:105mm;height:148mm}
+/* front */
+.front{display:flex;flex-direction:column;align-items:center;text-align:center;padding:9mm 7mm 0}
+.front .logo{width:19mm;height:19mm;border-radius:50%}
+.front h1{font-family:var(--hand);font-size:8.6mm;line-height:1.25;margin-top:4mm}
+.front .m{font-weight:700;font-size:4.3mm;line-height:1.75;margin-top:4mm;background:rgba(213,221,191,.75);border-radius:6mm;padding:3mm 5mm}
+.front .photo{position:absolute;left:0;right:0;bottom:0;height:52mm;width:100%;object-fit:cover;object-position:center 60%;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 30%);mask-image:linear-gradient(180deg,transparent 0,#000 30%)}
+/* back */
+.back{padding:8mm 8mm 7mm;display:flex;flex-direction:column;gap:3.2mm}
+.back .tag{font-family:var(--hand);font-size:6.4mm;color:var(--sage-ink);text-align:center}
+.back .intro{font-size:3.5mm;text-align:center;color:var(--soft);line-height:1.5}
+.qs{display:flex;flex-direction:column;gap:2.2mm;margin-top:1mm}
+.qs div{background:var(--card);border:.3mm solid var(--blush);border-radius:4mm;padding:2.2mm 3.5mm;font-size:4.1mm;font-weight:700;display:flex;gap:2.5mm;align-items:center}
+.qs span{flex:0 0 6mm;height:6mm;border-radius:50%;background:var(--peach);color:#fff;display:grid;place-items:center;font-size:3.2mm;font-weight:800}
+.close{font-size:3.6mm;text-align:center;line-height:1.5;font-weight:600}
+.bottom{margin-top:auto;display:flex;gap:4mm;align-items:center;background:#fff;border-radius:5mm;padding:3mm}
+.bottom img{width:24mm;height:24mm}
+.bottom div{display:flex;flex-direction:column;gap:.6mm;font-size:3.2mm;line-height:1.35}
+.bottom b{font-size:3.8mm}
+.ltr{direction:ltr;unicode-bidi:isolate;text-align:right}
+</style></head><body>
+<div class="page front">
+  <img class="logo" src="../img/logo.jpg" alt="">
+  <h1>לילה טוב<br>מתחיל בהיכרות</h1>
+  <p class="m">לא כל בכי הוא עייפות,<br>לא כל יקיצה היא בעיה,<br>ולא כל תינוק זקוק לאותו פתרון.</p>
+  <img class="photo" src="../img/cover.jpg" alt="">
+</div>
+<div class="page back">
+  <p class="tag">רגע של התבוננות</p>
+  <p class="intro">כשהתינוק מתחיל להיות חסר שקט,<br>עצרי רגע ושאלי את עצמך:</p>
+  <div class="qs">
+    <div><span>1</span>מתי הוא ישן לאחרונה?</div>
+    <div><span>2</span>מתי הוא אכל?</div>
+    <div><span>3</span>מה קרה סביבו בדקות האחרונות?</div>
+  </div>
+  <p class="close">את לא חייבת למצוא מיד את התשובה.<br>את מתחילה ללמוד את השפה שלו.</p>
+  <div class="bottom">
+    <img src="../qr/qr-rotem-guide-logo.png" alt="">
+    <div><b>המדריך המלא בטלפון</b><span>שאלה? כתבי לי בוואטסאפ</span><span class="ltr">052-4700409</span><span>רותם סגל · מאירה לכם את הדרך</span></div>
+  </div>
+</div>
+</body></html>

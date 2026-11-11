@@ -1,0 +1,100 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><title>משחק זהי את הסימן</title>
+<link rel="stylesheet" href="common.css">
+<style>
+@page{size:148mm 210mm;margin:0}
+.page{width:148mm;height:210mm;padding:11mm 11mm 10mm;display:flex;flex-direction:column;gap:5mm}
+.top{display:flex;justify-content:space-between;align-items:center}
+.top .game{font-family:var(--hand);font-size:6.4mm;color:var(--deep)}
+.top .num{font-size:4mm;font-weight:700;color:var(--soft);background:var(--card);border:.3mm solid var(--blush);border-radius:99px;padding:1mm 4mm}
+.photo{width:100%;height:72mm;object-fit:cover;border-radius:7mm}
+.q{font-size:4.6mm;color:var(--soft);font-weight:600}
+.sit{font-weight:800;font-size:7.4mm;line-height:1.4}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:1mm}
+.opts span{background:var(--card);border:.5mm solid var(--peach);border-radius:99px;text-align:center;padding:2.6mm;font-size:5mm;font-weight:700}
+.flip{margin-top:auto;text-align:center;font-size:4.2mm;color:var(--soft);font-weight:600}
+/* back */
+.back{justify-content:flex-start}
+.ans-k{font-family:var(--hand);font-size:6mm;color:var(--sage-ink)}
+.ans{font-family:var(--hand);font-size:9mm;line-height:1.3}
+.back p.t{font-size:5mm;line-height:1.6}
+.look{background:rgba(213,221,191,.6);border-radius:6mm;padding:5mm 6mm;display:flex;flex-direction:column;gap:2mm}
+.look b{font-size:5mm}
+.look li{font-size:4.8mm;line-height:1.55;list-style:none}
+.look li::before{content:"♡ ";color:var(--deep)}
+.sig{margin-top:auto;display:flex;align-items:center;gap:4mm;border-top:.3mm dashed var(--peach);padding-top:4mm}
+.sig img{width:15mm;height:15mm;border-radius:50%}
+.sig p{font-weight:700;font-size:4.4mm;line-height:1.4}
+</style></head><body>
+
+<!-- card 1 -->
+<div class="page">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 1 מתוך 4</span></div>
+  <img class="photo" src="../img/yawn.jpg" alt="">
+  <p class="q">מה התינוק מנסה לספר?</p>
+  <p class="sit">הוא ער כבר זמן מה, מפהק<br>ומסיט את המבט מהפנים שלך.</p>
+  <div class="opts"><span>עייפות</span><span>רעב</span><span>הצפה בגירויים</span><span>צורך בקרבה</span></div>
+  <p class="flip">בחרי תשובה והפכי את הכרטיס ↻</p>
+</div>
+<div class="page back">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 1 · תשובה</span></div>
+  <p class="ans-k">התשובה של רותם</p>
+  <p class="ans">כנראה עייפות.<br>אבל רק "כנראה".</p>
+  <p class="t">פיהוקים, הסטת מבט וירידה בעניין בסביבה הם סימני עייפות אפשריים. הם עוזרים לזהות עייפות עוד לפני שהבכי מתחיל. ועדיין, הם לא ייחודיים לעייפות, ולא כל התינוקות מראים אותם.</p>
+  <div class="look"><b>מה בודקים?</b><ul><li>כמה זמן עבר מאז השינה האחרונה</li><li>איך הוא מתנהג עכשיו</li><li>האם יש צורך אחר שעוד לא קיבל מענה</li></ul></div>
+  <div class="sig"><img src="../img/logo.jpg" alt=""><p>לא כל בכי הוא עייפות.<br>רותם סגל · מדריכת הורים ויועצת שינה</p></div>
+</div>
+
+<!-- card 2 -->
+<div class="page">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 2 מתוך 4</span></div>
+  <img class="photo" src="../img/mother.jpg" alt="" style="object-position:center 80%">
+  <p class="q">מה התינוק מנסה לספר?</p>
+  <p class="sit">הוא בוכה בעוצמה,<br>וגם על הידיים קשה לו להירגע.</p>
+  <div class="opts"><span>עייפות</span><span>רעב</span><span>הצפה בגירויים</span><span>צורך בקרבה</span></div>
+  <p class="flip">בחרי תשובה והפכי את הכרטיס ↻</p>
+</div>
+<div class="page back">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 2 · תשובה</span></div>
+  <p class="ans-k">התשובה של רותם</p>
+  <p class="ans">כל אחת מהתשובות<br>יכולה להיות נכונה.</p>
+  <p class="t">כשהתינוק כבר בוכה בעוצמה ומתקשה להירגע, ייתכן שהוא עייף מאוד, אבל ייתכן גם שיש צורך אחר שטרם קיבל מענה. בכי הוא דרך תקשורת, אבל הוא לא מספר לנו בדיוק מה התינוק צריך.</p>
+  <div class="look"><b>מה בודקים?</b><ul><li>מתי הוא ישן לאחרונה?</li><li>מתי הוא אכל?</li><li>מה קרה סביבו בדקות האחרונות?</li></ul></div>
+  <div class="sig"><img src="../img/logo.jpg" alt=""><p>את לא חייבת למצוא מיד את התשובה.<br>את מתחילה ללמוד את השפה שלו.</p></div>
+</div>
+
+<!-- card 3 -->
+<div class="page">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 3 מתוך 4</span></div>
+  <img class="photo" src="../img/tool2.jpg" alt="">
+  <p class="q">מה התינוק מנסה לספר?</p>
+  <p class="sit">אחרי ביקור משפחתי רועש,<br>התנועות שלו פחות מאורגנות<br>והוא חסר שקט.</p>
+  <div class="opts"><span>עייפות</span><span>רעב</span><span>הצפה בגירויים</span><span>צורך בקרבה</span></div>
+  <p class="flip">בחרי תשובה והפכי את הכרטיס ↻</p>
+</div>
+<div class="page back">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 3 · תשובה</span></div>
+  <p class="ans-k">התשובה של רותם</p>
+  <p class="ans">אולי הצפה בגירויים,<br>ואולי גם עייפות.</p>
+  <p class="t">הרבה קולות, פנים וידיים חדשות יכולים להציף תינוק קטן, שעדיין זקוק לעזרה רבה בוויסות ובהרגעה. לפעמים הצפה ועייפות מגיעות יחד.</p>
+  <div class="look"><b>מה אפשר לנסות?</b><ul><li>מעבר למקום שקט ורגוע</li><li>הפחתת גירויים ואור</li><li>מגע, קול מוכר ותנועה עדינה</li></ul></div>
+  <div class="sig"><img src="../img/logo.jpg" alt=""><p>הצורך בקרבה הוא לא הרגל רע.<br>הוא צורך התפתחותי!</p></div>
+</div>
+
+<!-- card 4 -->
+<div class="page">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 4 מתוך 4</span></div>
+  <img class="photo" src="../img/sleep.jpg" alt="">
+  <p class="q">מה זה אומר?</p>
+  <p class="sit">תינוק בן שבועיים מתעורר<br>אחרי שינה קצרה, וצריך עזרה<br>כדי להירדם שוב.</p>
+  <div class="opts"><span>יש בעיה בשינה</span><span>זה חלק מהגיל</span></div>
+  <p class="flip">בחרי תשובה והפכי את הכרטיס ↻</p>
+</div>
+<div class="page back">
+  <div class="top"><span class="game">זהי את הסימן</span><span class="num">כרטיס 4 · תשובה</span></div>
+  <p class="ans-k">התשובה של רותם</p>
+  <p class="ans">לא כל יקיצה<br>היא בעיה.</p>
+  <p class="t">בטרימסטר הרביעי השינה מפוזרת לאורך היממה, השעון הביולוגי עדיין מתפתח, ומחזורי השינה של תינוקות שונים משל מבוגרים. תינוק שמתעורר, ישן לפרקי זמן קצרים או זקוק לעזרה בהירדמות, זה לא בהכרח סימן שמשהו לא בסדר.</p>
+  <div class="look"><b>המטרה בתחילת הדרך</b><ul><li>לא לדרוש מהתינוק שינה של מבוגר</li><li>להבין את השינה שמתאימה לשלב ההתפתחותי שלו</li></ul></div>
+  <div class="sig"><img src="../img/logo.jpg" alt=""><p>רוצה להבין עוד? המדריך המלא<br>מחכה לך בסריקת ה־QR בדוכן</p></div>
+</div>
+</body></html>
