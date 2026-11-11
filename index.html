@@ -390,10 +390,10 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   if(GC_CODE){
     var s=document.createElement('script'); s.async=true; s.src='https://gc.zgo.at/count.js';
     s.setAttribute('data-goatcounter','https://'+GC_CODE+'.goatcounter.com/count');
-    s.onload=function(){ if(/[?&]src=qr\b/.test(location.search)) count('qr-scan','סריקת QR') };
+    s.onload=function(){ if(FROM_QR) count('qr-scan','סריקת QR') };
     document.head.appendChild(s);
   }
-  if(/[?&]src=qr\b/.test(location.search)){ try{history.replaceState(null,'',location.pathname+location.hash)}catch(e){} }
+  if(FROM_QR){ try{history.replaceState(null,'',location.pathname+location.hash)}catch(e){} }
 
   var door=null;
   try{door=localStorage.getItem('rotem-door')}catch(e){}
