@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>לילה טוב מתחיל בהיכרות | רותם סגל</title>
+<meta name="description" content="המדריך הראשון שלך להבנת השינה של התינוק, כבר מגיל לידה. מתנה מרותם סגל, מדריכת הורים ויועצת שינה.">
+<meta property="og:title" content="לילה טוב מתחיל בהיכרות">
+<meta property="og:description" content="המדריך הראשון שלך להבנת השינה של התינוק, כבר מגיל לידה. מאת רותם סגל.">
+<meta property="og:image" content="https://itaylevi1302.github.io/rotem-guide/img/cover.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBF3EC">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@500;700&display=swap">
+<style>
+:root{
+  --paper:#FBF3EC; --paper2:#F6E7DC; --card:#FFFBF7; --ink:#4A3A33; --soft:#7D6A60;
+  --peach:#E4A07F; --peach-deep:#C9774F; --blush:#F7DCCB; --sage:#C9D3B0; --sage-ink:#5F6E4B;
+  --wa:#1F9D55;
+  --hand:"Playpen Sans Hebrew","Assistant",system-ui,sans-serif;
+  --body:"Assistant","Segoe UI",Arial,sans-serif;
+  --r:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7;
+  -webkit-text-size-adjust:100%;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;display:block}
+p{margin:0}
+h1,h2,h3{margin:0;line-height:1.3;text-wrap:balance;font-weight:700}
+.hand{font-family:var(--hand)}
+.wrap{max-width:620px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* HERO */
+.hero{background:linear-gradient(180deg,var(--paper) 0%,var(--paper2) 100%);padding-top:calc(28px + env(safe-area-inset-top,0px));text-align:center;overflow:hidden}
+.hero .logo{width:118px;height:118px;border-radius:50%;margin:0 auto 18px;box-shadow:0 6px 24px rgba(201,119,79,.18)}
+.hero h1{font-family:var(--hand);font-size:clamp(38px,11vw,56px);line-height:1.15;color:var(--ink);
+  background:radial-gradient(ellipse at center,var(--blush) 0%,rgba(247,220,203,0) 72%);padding:10px 0}
+.hero .sub{font-size:20px;color:var(--soft);margin-top:10px}
+.mantra{margin:24px auto 0;max-width:420px;font-family:var(--hand);font-size:20px;line-height:1.8;color:var(--ink);
+  background:rgba(201,211,176,.45);border-radius:28px;padding:14px 22px}
+.hero .photo{margin-top:26px;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:center 60%;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 22%);mask-image:linear-gradient(180deg,transparent 0,#000 22%)}
+.start{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:var(--peach-deep);color:#fff;text-decoration:none;
+  font-weight:700;font-size:19px;border-radius:99px;padding:13px 30px;box-shadow:0 6px 18px rgba(201,119,79,.3)}
+.start:focus-visible,.wa-btn:focus-visible,.toc a:focus-visible,.fab:focus-visible{outline:3px solid var(--sage-ink);outline-offset:3px}
+
+/* TOC */
+.toc{padding-block:34px 8px}
+.toc h2{font-family:var(--hand);font-size:24px;text-align:center;margin-bottom:14px}
+.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.toc a{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--card);border-radius:16px;padding:10px 14px;border:1px solid var(--blush)}
+.toc a span{flex:0 0 32px;height:32px;border-radius:50%;background:var(--blush);color:var(--peach-deep);display:grid;place-items:center;font-weight:800;font-size:15px}
+.toc a b{font-weight:600}
+
+/* CHAPTER */
+.ch{padding-block:44px 8px;display:flex;flex-direction:column;gap:18px}
+.ch+.ch{border-top:1px dashed var(--blush)}
+.eyebrow{font-size:14px;font-weight:700;color:var(--peach-deep);letter-spacing:.04em}
+.ch h2{font-family:var(--hand);font-size:clamp(28px,8vw,36px);line-height:1.25}
+.ch h3{font-size:21px}
+.pic{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
+.pic.wide{aspect-ratio:16/10}
+.lead{font-size:19px}
+.pull{font-family:var(--hand);font-size:22px;line-height:1.6;text-align:center;background:var(--blush);border-radius:var(--r);padding:16px 20px}
+.pull.sage{background:rgba(201,211,176,.5)}
+.box{background:var(--card);border-radius:var(--r);padding:18px 20px;border:1px solid var(--blush);display:flex;flex-direction:column;gap:10px}
+
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.facts div{background:var(--card);border:1px solid var(--blush);border-radius:18px;padding:14px;text-align:center;font-weight:600;font-size:17px;line-height:1.45}
+
+.cues{display:flex;flex-wrap:wrap;gap:8px}
+.cues span{background:var(--card);border:1.5px solid var(--peach);border-radius:99px;padding:6px 14px;font-weight:600;font-size:16px}
+
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:start;background:var(--card);border:1px solid var(--blush);border-radius:var(--r);padding:14px}
+.step img{width:84px;height:84px;border-radius:16px;object-fit:cover}
+.step div{min-width:0;display:flex;flex-direction:column;gap:4px}
+.step h3{font-size:19px}
+.step p{font-size:17px;color:var(--soft)}
+.n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--peach);color:#fff;font-size:14px;font-weight:800;margin-inline-end:6px;vertical-align:2px}
+
+.reflect{background:rgba(201,211,176,.35);border-radius:var(--r);padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.reflect .tag{font-family:var(--hand);font-size:20px;color:var(--sage-ink)}
+.reflect q{font-weight:600;quotes:"״" "״"}
+
+.safe{border:2px solid var(--peach);background:var(--card);border-radius:var(--r);padding:16px 20px;font-size:16.5px;display:flex;gap:12px;align-items:flex-start}
+.safe b{display:block;margin-bottom:2px;font-size:17px}
+.safe svg{flex:0 0 26px;margin-top:3px}
+
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;background:var(--card);color:var(--wa);
+  border:2px solid var(--wa);border-radius:99px;padding:11px 18px;font-weight:700;font-size:17px}
+.wa-btn.solid{background:var(--wa);color:#fff;font-size:19px;padding:14px 20px}
+.wa-btn svg{flex:0 0 22px}
+
+.about{display:grid;grid-template-columns:116px 1fr;gap:16px;align-items:center}
+.about img{width:116px;height:116px;border-radius:50%;object-fit:cover;object-position:center 30%}
+.about div{min-width:0}
+
+.services{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.services div{background:var(--card);border:1px solid var(--blush);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.services b{font-size:17px;color:var(--peach-deep)}
+.services p{font-size:15.5px;color:var(--soft);line-height:1.5}
+
+.contact{display:flex;flex-direction:column;gap:10px;text-align:center}
+.contact .name{font-family:var(--hand);font-size:32px}
+.contact a.plain{color:var(--ink);font-weight:700;text-decoration:none;font-size:19px}
+.links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-size:16px}
+.links a{color:var(--peach-deep);font-weight:700}
+
+footer{padding-block:36px 20px;text-align:center;font-family:var(--hand);font-size:24px;color:var(--peach-deep)}
+footer small{display:block;font-family:var(--body);font-size:13px;color:var(--soft);margin-top:8px}
+
+/* floating whatsapp */
+.fab{position:fixed;z-index:20;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  display:flex;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:16px;
+  border-radius:99px;padding:12px 18px 12px 16px;box-shadow:0 8px 24px rgba(31,157,85,.35)}
+.fab svg{flex:0 0 24px}
+
+@media (max-width:520px){.step{grid-template-columns:1fr;padding:0;overflow:hidden}.step img{width:100%;height:auto;aspect-ratio:16/7;border-radius:0}.step div{padding:2px 16px 16px}}
+@media (max-width:380px){.facts,.services{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="img/logo.jpg" alt="הלוגו של רותם סגל, מאירה לכם את הדרך" width="236" height="236">
+    <h1>לילה טוב<br>מתחיל בהיכרות</h1>
+    <p class="sub">המדריך הראשון שלך להבנת השינה של התינוק, כבר מגיל לידה</p>
+    <p class="mantra">לא כל בכי הוא עייפות,<br>לא כל יקיצה היא בעיה,<br>ולא כל תינוק זקוק לאותו פתרון.</p>
+    <a class="start" href="#hello">בואי נתחיל</a>
+  </div>
+  <img class="photo" src="img/cover.jpg" alt="תינוק ישן בשלווה ליד בובת ארנב">
+</header>
+
+<main class="wrap">
+
+<nav class="toc" aria-label="תוכן המדריך">
+  <h2>מה במדריך</h2>
+  <ol>
+    <li><a href="#hello"><span>1</span><b>נעים להכיר, אמא</b></a></li>
+    <li><a href="#world"><span>2</span><b>התינוק שלך לומד להכיר את העולם</b></a></li>
+    <li><a href="#crying"><span>3</span><b>לא כל בכי הוא עייפות</b></a></li>
+    <li><a href="#habits"><span>4</span><b>הרגלי שינה מתחילים לפני ההרדמה</b></a></li>
+    <li><a href="#tools"><span>5</span><b>שלושה כלים קטנים להיום</b></a></li>
+    <li><a href="#still"><span>6</span><b>ומה אם זה עדיין לא עובד?</b></a></li>
+    <li><a href="#me"><span>7</span><b>אני כאן גם בהמשך הדרך</b></a></li>
+  </ol>
+</nav>
+
+<!-- 1 -->
+<section class="ch" id="hello">
+  <span class="eyebrow">פרק 1</span>
+  <h2>נעים להכיר, אמא</h2>
+  <p class="lead">לפני שנתחיל לדבר על שינה, אני רוצה לדבר איתך רגע על ההתחלה.</p>
+  <p>אולי את עדיין בהריון, מתרגשת ומתכוננת לפגוש את התינוק שלך. ואולי הוא כבר כאן, ואת מגלה שהחיים לצד תינוק קטן מלאים ברגעים מרגשים, אבל גם בשאלות, בעייפות ובחוסר ודאות.</p>
+  <p>אנחנו מתכוננות ללידה, בוחרות עגלה, מיטה ובגדים קטנטנים. אבל כמה מאיתנו באמת מתכוננות ליום שאחרי? לרגעים שבהם התינוק בוכה ואנחנו לא בטוחות למה, להרדמות שמתארכות, ליקיצות בלילה ולשאלה שעולה שוב ושוב: ״איך אני יודעת מה התינוק שלי צריך?״</p>
+  <p class="pull">אז קודם כול, חשוב לי שתדעי:<br>את לא אמורה לדעת הכול מהרגע הראשון.</p>
+  <div class="about">
+    <img src="img/rotem.jpg" alt="רותם סגל" loading="lazy">
+    <div><p>אני רותם סגל, מדריכת הורים ויועצת שינה, גננת ואשת חינוך עם מעל 10 שנות ניסיון, וגם אמא בעצמי.</p></div>
+  </div>
+  <p>אני מאמינה שהורות לא מתחילה בשיטות ובכללים, אלא בהיכרות, בהקשבה ובהבנה של הצרכים של התינוק ושל המשפחה כולה.</p>
+  <p class="pull sage">במדריך הזה אני מזמינה אותך להסתכל על השינה קצת אחרת. לא רק לשאול ״איך מרדימים?״, אלא להתחיל לשאול ״מה התינוק שלי מנסה לספר לי?״</p>
+</section>
+
+<!-- 2 -->
+<section class="ch" id="world">
+  <span class="eyebrow">פרק 2</span>
+  <h2>התינוק שלך לומד להכיר את העולם</h2>
+  <img class="pic" src="img/mother.jpg" alt="איור של אמא מחבקת תינוק" loading="lazy" style="object-position:center 80%">
+  <p>דמייני לרגע את העולם שהתינוק שלך הכיר עד עכשיו. במשך חודשים הוא היה עטוף, מוגן, בתנועה כמעט מתמדת, מוקף בקולות מוכרים ובתחושת קרבה.</p>
+  <p>ואז הוא נולד. פתאום יש אור, רעשים, תחושות חדשות, רעב, שינויי טמפרטורה ומרחב שהוא עדיין לא מכיר.</p>
+  <div class="box">
+    <h3>הטרימסטר הרביעי</h3>
+    <p>שלושת החודשים הראשונים לחיים מכונים לעיתים ״הטרימסטר הרביעי״: תקופה של הסתגלות משמעותית, גם עבור התינוק וגם עבור ההורים. בתקופה הזאת התינוק עדיין זקוק לעזרה רבה בוויסות ובהרגעה.</p>
+  </div>
+  <p class="pull">הצורך בקרבה הוא לא הרגל רע.<br>הוא צורך התפתחותי!</p>
+  <h3>ומה לגבי השינה?</h3>
+  <div class="facts">
+    <div>השינה מפוזרת לאורך היממה</div>
+    <div>השעון הביולוגי שמבחין בין יום ולילה עדיין מתפתח</div>
+    <div>תינוקות מתעוררים לעיתים קרובות לצורך האכלה, קרבה ומענה לצרכים</div>
+    <div>מחזורי השינה שלהם שונים משל מבוגרים</div>
+  </div>
+  <p>לכן, אם התינוק שלך מתעורר בלילה, זקוק לעזרה בהירדמות או ישן לפרקי זמן קצרים, זה לא בהכרח סימן שמשהו לא בסדר.</p>
+  <p class="pull sage">המטרה שלנו בתחילת הדרך היא לא לדרוש מהתינוק שינה של מבוגר, אלא להבין את השינה שמתאימה לשלב ההתפתחותי שלו.</p>
+  <div class="reflect">
+    <span class="tag">רגע של התבוננות</span>
+    <p>כשאת חושבת על השינה של התינוק שלך, מה הכי מעסיק אותך? האם קשה לו להירדם? האם הוא מתעורר לעיתים קרובות? או שאולי את פשוט לא בטוחה מתי הוא עייף?</p>
+    <p>לפעמים עצם הזיהוי של השאלה הוא הצעד הראשון להבנה.</p>
+  </div>
+  <a class="wa-btn" data-topic="הטרימסטר הרביעי והשינה של ניו בורן" href="https://wa.me/972524700409" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>יש לי שאלה על החלק הזה</a>
+</section>
+
+<!-- 3 -->
+<section class="ch" id="crying">
+  <span class="eyebrow">פרק 3</span>
+  <h2>לא כל בכי הוא עייפות</h2>
+  <img class="pic" src="img/yawn.jpg" alt="תינוק מפהק" loading="lazy">
+  <p>אחד הדברים הראשונים שאני מלמדת הורים הוא להתבונן בתינוק לפני שממהרים לפעול.</p>
+  <p>בכי הוא דרך תקשורת, אבל הוא לא מספר לנו בדיוק מה התינוק צריך. תינוק יכול לבכות כי הוא רעב, עייף, מוצף בגירויים, מרגיש אי־נוחות או זקוק לקרבה ולוויסות. <b>וכאן מתחילה ההיכרות שלנו איתו.</b></p>
+  <h3>איך אפשר לזהות סימני עייפות?</h3>
+  <p>לפעמים התינוק יאותת לנו על עייפות עוד לפני שהוא מתחיל לבכות. סימנים אפשריים:</p>
+  <div class="cues">
+    <span>ירידה בעניין בסביבה או במשחק</span>
+    <span>הסטת מבט והפחתת קשר עין</span>
+    <span>פיהוקים</span>
+    <span>תנועות פחות מאורגנות או אי־שקט</span>
+    <span>קושי להישאר רגוע</span>
+  </div>
+  <p>חשוב לזכור שסימנים אלו אינם ייחודיים לעייפות, ושלא כל התינוקות יראו את אותם הסימנים.</p>
+  <div class="box">
+    <h3>אז מה עושים?</h3>
+    <p>כשהתינוק כבר בוכה בעוצמה ומתקשה להירגע, ייתכן שהוא עייף מאוד, אבל ייתכן גם שיש צורך אחר שטרם קיבל מענה.</p>
+    <p>במקום להסתכל רק על השעון, נסי לשלב בין שלושה דברים: <b>הזמן שעבר מאז השינה האחרונה, ההתנהגות של התינוק, והצרכים הנוספים שלו.</b></p>
+    <p>עם הזמן, ככל שתכירי אותו, יהיה לך קל יותר לזהות דפוסים שחוזרים על עצמם.</p>
+  </div>
+  <div class="reflect">
+    <span class="tag">רגע של התבוננות</span>
+    <p>בפעם הבאה שהתינוק שלך מתחיל להיות חסר שקט, נסי לשאול את עצמך: <q>מתי הוא ישן לאחרונה? מתי אכל? מה קרה סביבו בדקות האחרונות?</q></p>
+    <p>את לא חייבת למצוא מיד את התשובה. את מתחילה ללמוד את השפה שלו.</p>
+  </div>
+  <a class="wa-btn" data-topic="בכי וסימני עייפות" href="https://wa.me/972524700409" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>יש לי שאלה על החלק הזה</a>
+</section>
+
+<!-- 4 -->
+<section class="ch" id="habits">
+  <span class="eyebrow">פרק 4</span>
+  <h2>הרגלי שינה מתחילים הרבה לפני ההרדמה</h2>
+  <img class="pic wide" src="img/sleep.jpg" alt="תינוק ישן ומחייך" loading="lazy">
+  <p>כשאנחנו מדברות על הרגלי שינה, אנחנו לא מדברות בהכרח על תינוק שנרדם לבד במיטה.</p>
+  <p>בגיל הרך מאוד, הרגלים מתחילים בדברים קטנים: היכרות, חזרתיות, סביבה מותאמת ומענה לצרכים. אני אוהבת לחשוב עליהם כעל <b>עוגנים קטנים</b> במהלך היום.</p>
+  <h3>שלושה עוגנים שאפשר להתחיל לבנות</h3>
+  <div class="steps">
+    <div class="step"><img src="img/daynight.jpg" alt="" loading="lazy"><div>
+      <h3><span class="n">1</span>הבחנה עדינה בין יום ולילה</h3>
+      <p>במהלך היום נאפשר אור טבעי, קולות רגילים של הבית ופעילות שמתאימה לגיל. בלילה נעדיף תאורה חלשה, אווירה רגועה ופחות גירויים בזמן ההאכלה והטיפול. כך אנחנו מסייעות בהדרגה להתפתחות ההבחנה בין יום ללילה, בלי לצפות שהתינוק יסתגל מיד.</p></div></div>
+    <div class="step"><img src="img/books.jpg" alt="" loading="lazy"><div>
+      <h3><span class="n">2</span>רצף מוכר לפני שינה</h3>
+      <p>תינוקות לומדים מתוך חזרתיות. אפשר ליצור רצף קצר שחוזר על עצמו לפני ההרדמה, למשל מעבר לסביבה שקטה, קול מוכר ומגע מרגיע. אין צורך בטקס ארוך או בשעה קבועה כבר מהלידה.</p></div></div>
+    <div class="step"><img src="img/feet.jpg" alt="" loading="lazy"><div>
+      <h3><span class="n">3</span>התאמה ולא נוקשות</h3>
+      <p>יש ימים שבהם התינוק יזדקק ליותר קרבה, יהיו יותר יקיצות או שההרדמה תהיה ממושכת יותר. וזה בסדר. הרגלי שינה נבנים לאורך זמן, ולא מתוך ניסיון לשלוט בכל שינה ושינה.</p></div></div>
+  </div>
+  <p class="pull sage">העוגנים מעניקים כיוון.<br>התינוק שלך מלמד אותך את הקצב.</p>
+  <a class="wa-btn" data-topic="בניית הרגלי שינה" href="https://wa.me/972524700409" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>יש לי שאלה על החלק הזה</a>
+</section>
+
+<!-- 5 -->
+<section class="ch" id="tools">
+  <span class="eyebrow">פרק 5</span>
+  <h2>שלושה כלים קטנים שאפשר לנסות כבר היום</h2>
+  <p>אני רוצה שתצאי מהמדריך הזה לא רק עם ידע, אלא גם עם משהו שתוכלי לקחת איתך לרגעי ההרדמה.</p>
+  <div class="steps">
+    <div class="step"><img src="img/tool1.jpg" alt="" loading="lazy"><div>
+      <h3><span class="n">1</span>רגע של התבוננות</h3>
+      <p>לפני שאת מתחילה להרדים, עצרי לרגע. הסתכלי על התינוק שלך ונסי לזהות אם הוא מראה סימני עייפות, רעב, צורך בקרבה או אי־נוחות. לפעמים שינוי קטן באופן שבו אנחנו מפרשות את ההתנהגות שלו משנה גם את הדרך שבה אנחנו מגיבות.</p></div></div>
+    <div class="step"><img src="img/tool2.jpg" alt="" loading="lazy"><div>
+      <h3><span class="n">2</span>הכנה קצרה לשינה</h3>
+      <p>בחרי רצף קצר ונעים שמתאים לתינוק שלך. לדוגמה: הפחתת גירויים, מעבר למקום רגוע, משפט מוכר כמו ״אתה עייף, עכשיו ננוח״, וקול שקט שחוזר על עצמו. עם הזמן, החזרתיות יכולה לעזור לתינוק להכיר את המעבר מפעילות למנוחה.</p></div></div>
+    <div class="step"><img src="img/tool3.jpg" alt="" loading="lazy"><div>
+      <h3><span class="n">3</span>מגע, קול ותנועה</h3>
+      <p>תינוקות רבים נעזרים במגע, בקול מוכר ובתנועה עדינה כדי להירגע. אפשר להחזיק את התינוק קרוב, להשמיע קול רגוע או לנוע איתו בעדינות, תוך שמירה על תמיכה מתאימה בראש ובצוואר. התבונני בתגובה שלו: האם הגוף שלו מתרפה? האם הוא נרגע? אם הוא מראה סימני מצוקה, עוצרים ובודקים מחדש את הצורך.</p></div></div>
+  </div>
+  <div class="safe" role="note">
+    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="var(--peach)"/><rect x="11" y="6" width="2" height="8" rx="1" fill="#fff"/><circle cx="12" cy="17.5" r="1.3" fill="#fff"/></svg>
+    <p><b>חשוב לשינה בטוחה</b>הרגעה על הידיים יכולה להיות נעימה ומועילה, אך לשינה עצמה יש להשכיב את התינוק על הגב, במיטה או בעריסה תקנית, על מזרן שטוח וקשיח, ללא כריות, בובות, מגיני ראש או מצעים רופפים. אין להשאיר תינוק לישון על ספה, בכורסה או על אדם שעלול להירדם.</p>
+  </div>
+  <div class="reflect">
+    <span class="tag">רגע של התבוננות</span>
+    <p>איזה מהכלים עזר לתינוק שלך להירגע? ומה קרה כשניסית אותו בזמן אחר?</p>
+    <p>לא תמיד נקבל את אותה תגובה, וזה חלק מתהליך ההיכרות.</p>
+  </div>
+  <a class="wa-btn" data-topic="הכלים להרגעה ולהרדמה" href="https://wa.me/972524700409" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>יש לי שאלה על החלק הזה</a>
+</section>
+
+<!-- 6 -->
+<section class="ch" id="still">
+  <span class="eyebrow">פרק 6</span>
+  <h2>ומה אם זה עדיין לא עובד?</h2>
+  <img class="pic wide" src="img/bunny.jpg" alt="תינוק ישן מחובק עם ארנב" loading="lazy">
+  <p>אולי ניסית לזהות סימני עייפות, להפחית גירויים וליצור רגעים רגועים לפני השינה, ובכל זאת ההרדמות עדיין מאתגרות.</p>
+  <p class="pull">אני רוצה להזכיר לך משהו חשוב:<br>לא כל בכי הוא עייפות, לא כל יקיצה היא בעיה,<br>ולא כל תינוק זקוק לאותו פתרון.</p>
+  <p>הכלים שקיבלת במדריך הם התחלה, אבל לפעמים כדי להבין את הקושי צריך להסתכל על התמונה הרחבה: הגיל, ההתפתחות, האכילה, השינה והצרכים של המשפחה כולה.</p>
+  <p class="pull sage">ולפעמים, שינוי קטן ומדויק יכול לעשות הבדל גדול.</p>
+  <div class="box">
+    <h3>ועכשיו, בואי נדבר על התינוק שלך</h3>
+    <p>בהדרכה האישית שלי אנחנו לומדים להכיר את התינוק שלך, להבין מה הוא צריך ולבנות יחד כלים והרגלים שמתאימים לו ולכם.</p>
+    <p>ואת לא צריכה לחכות עד שהשינה תהפוך לקושי. אפשר ללמוד, להבין ולבנות ביטחון הורי כבר מההתחלה.</p>
+    <a class="wa-btn solid" data-topic="הדרכה אישית" data-msg="היי רותם, קראתי את המדריך ״לילה טוב מתחיל בהיכרות״ מכנס בייבילנד ואשמח לשמוע על הדרכה אישית." href="https://wa.me/972524700409" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>לשיחה עם רותם בוואטסאפ</a>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="ch" id="me">
+  <span class="eyebrow">פרק 7</span>
+  <h2>אני כאן גם בהמשך הדרך</h2>
+  <p class="lead">כי ההורות משתנה, ואנחנו גדלים יחד איתה.</p>
+  <p>היום את אולי מחפשת תשובות על שינה, אבל בהמשך הדרך יגיעו עוד שאלות, עוד התרגשויות ועוד אתגרים.</p>
+  <img class="pic wide" src="img/family.jpg" alt="איור של אמא מחבקת שני ילדים" loading="lazy" style="object-position:center 85%">
+  <div class="box">
+    <h3>אני רותם סגל</h3>
+    <p>מדריכת הורים הוליסטית, יועצת שינה, גננת ואשת חינוך עם מעל 10 שנות ניסיון. אני מלווה הורים החל מההכנה להורות ולאורך שנות הגיל הרך, מתוך אמונה שאין דרך אחת שמתאימה לכל משפחה.</p>
+  </div>
+  <h3>איך אני יכולה ללוות אתכם?</h3>
+  <div class="services">
+    <div><b>לקראת ההורות ולאחר הלידה</b><p>הכנה להורות, הטרימסטר הרביעי, הבנת צורכי התינוק ובניית ביטחון הורי.</p></div>
+    <div><b>שינה והרגלי שינה</b><p>הבנת השינה בגיל הרך, התמודדות עם אתגרי הרדמה ויקיצות ובניית הרגלים מותאמים.</p></div>
+    <div><b>חשיפה למוצקים ואכילה</b><p>ליווי בצעדים הראשונים בעולם האכילה, היכרות עם מזונות חדשים ועידוד חוויית אכילה חיובית.</p></div>
+    <div><b>גמילה מחיתולים</b><p>זיהוי מוכנות, ליווי התהליך והתמודדות עם חששות וקשיים בדרך.</p></div>
+    <div><b>גבולות ואתגרי הגיל הרך</b><p>התקפי זעם, התמודדות עם תסכולים, שיתוף פעולה, עצמאות ובניית סמכות הורית מיטיבה.</p></div>
+    <div><b>הרחבת המשפחה</b><p>הכנה להולדת אח או אחות, הסתגלות לשינויים בבית וחיזוק הקשר המשפחתי.</p></div>
+  </div>
+  <p class="pull">לכל שלב בהורות יש את האתגרים שלו.<br>ואתם לא צריכים לעבור אותם לבד.</p>
+  <p>אשמח להכיר אתכם, לשמוע על המשפחה שלכם ולחשוב יחד איך אפשר להקל, לדייק ולהאיר את הדרך.</p>
+  <div class="contact">
+    <span class="name">רותם סגל</span>
+    <span>מדריכת הורים ויועצת שינה</span>
+    <a class="wa-btn solid" data-topic="ליווי" data-msg="היי רותם, הגעתי מהמדריך ״לילה טוב מתחיל בהיכרות״ מכנס בייבילנד ואשמח לדבר איתך." href="https://wa.me/972524700409" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>שליחת הודעה בוואטסאפ</a>
+    <a class="plain" href="tel:+972524700409" dir="ltr">052-4700409</a>
+    <div class="links">
+      <a href="https://www.instagram.com/mommy_rotemsegal/" target="_blank" rel="noopener">אינסטגרם</a>
+      <a href="guide.pdf" download>הורדת המדריך כ־PDF</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  מאירה לכם את הדרך
+  <small>© רותם סגל · המדריך אינו מחליף ייעוץ רפואי</small>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/972524700409" target="_blank" rel="noopener" aria-label="שליחת הודעה לרותם בוואטסאפ"><svg width="24" height="24"><use href="#wa"/></svg>שאלה לרותם</a>
+
+<script>
+(function(){
+  var PHONE='972524700409', GUIDE='״לילה טוב מתחיל בהיכרות״';
+  function link(msg){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg)}
+  document.querySelectorAll('.wa-btn').forEach(function(a){
+    var msg=a.dataset.msg || ('היי רותם, קראתי במדריך '+GUIDE+' את החלק על '+a.dataset.topic+' ורציתי לשאול: ');
+    a.href=link(msg);
+  });
+  // floating button: mention the chapter the reader is on
+  var fab=document.getElementById('fab'), current=null;
+  var names={hello:'הפתיחה',world:'הטרימסטר הרביעי',crying:'בכי וסימני עייפות',habits:'הרגלי שינה',tools:'הכלים להרגעה',still:'מה עושים כשזה לא עובד',me:'הליווי שלך'};
+  function setFab(){
+    var msg = current ? 'היי רותם, אני קוראת את המדריך '+GUIDE+' (החלק על '+names[current]+') ורציתי לשאול: '
+                      : 'היי רותם, הגעתי מהמדריך '+GUIDE+' מכנס בייבילנד ורציתי לשאול: ';
+    fab.href=link(msg);
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){current=e.target.id;setFab()}})},{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('.ch').forEach(function(s){io.observe(s)});
+  }
+  setFab();
+})();
+</script>
+</body>
+</html>
