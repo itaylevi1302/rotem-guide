@@ -390,8 +390,14 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   if(GC_CODE){
     var s=document.createElement('script'); s.async=true; s.src='https://gc.zgo.at/count.js';
     s.setAttribute('data-goatcounter','https://'+GC_CODE+'.goatcounter.com/count');
-    s.onload=function(){ if(FROM_QR) count('qr-scan','סריקת QR') };
     document.head.appendChild(s);
+    if(FROM_QR){
+      var tries=0, t=setInterval(function(){
+        tries++;
+        if(window.goatcounter && goatcounter.count){ clearInterval(t); setTimeout(function(){count('qr-scan','סריקת QR')},300) }
+        else if(tries>50) clearInterval(t);
+      },200);
+    }
   }
   if(FROM_QR){ try{history.replaceState(null,'',location.pathname+location.hash)}catch(e){} }
 
