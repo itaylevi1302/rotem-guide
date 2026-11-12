@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>לילה טוב מתחיל בהיכרות | רותם סגל</title>
+<title>מה התינוק שלך מנסה לספר לך? | רותם סגל</title>
 <meta name="description" content="המדריך הראשון שלך להבנת השינה של התינוק, כבר מגיל לידה. מתנה מרותם סגל, מדריכת הורים ויועצת שינה.">
-<meta property="og:title" content="לילה טוב מתחיל בהיכרות">
+<meta property="og:title" content="מה התינוק שלך מנסה לספר לך?">
 <meta property="og:description" content="המדריך הראשון שלך להבנת השינה של התינוק, כבר מגיל לידה. מאת רותם סגל.">
 <meta property="og:image" content="https://itaylevi1302.github.io/rotem-guide/img/cover.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FBF3EC">
 <meta name="color-scheme" content="light only">
-<link rel="icon" href="img/logo.jpg">
+<link rel="icon" href="img/logo-hd.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap">
@@ -30,7 +30,7 @@
 [hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:16px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7;
+body{margin:0;background:var(--paper) url(img/grain.png);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.7;
   -webkit-text-size-adjust:100%;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
 img{max-width:100%;display:block}
 p{margin:0}
@@ -39,13 +39,16 @@ h1,h2,h3{margin:0;line-height:1.3;text-wrap:balance;font-weight:700}
 .wrap{max-width:620px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 
 /* HERO */
-.hero{background:linear-gradient(180deg,var(--paper) 0%,var(--paper2) 100%);padding-top:calc(28px + env(safe-area-inset-top,0px));text-align:center;overflow:hidden}
-.hero .logo{width:118px;height:118px;border-radius:50%;margin:0 auto 18px;box-shadow:0 6px 24px rgba(201,119,79,.18)}
-.hero h1{font-family:var(--hand);font-size:clamp(38px,11vw,56px);line-height:1.15;color:var(--ink);
-  background:radial-gradient(ellipse at center,var(--blush) 0%,rgba(247,220,203,0) 72%);padding:10px 0}
-.hero .sub{font-size:20px;color:var(--soft);margin-top:10px}
+.hero{position:relative;isolation:isolate;padding-top:calc(18px + env(safe-area-inset-top,0px));text-align:center;overflow:hidden;
+  background:url(img/wash-peach.png) no-repeat right -120px top -90px/360px,url(img/wash-sage.png) no-repeat left -140px top 300px/380px,
+  url(img/wash-sun.png) no-repeat left -60px top -70px/240px,linear-gradient(180deg,rgba(251,243,236,0) 0%,var(--paper2) 100%)}
+.hero .logo{width:min(230px,62vw);height:auto;margin:0 auto 4px}
+.kicker{font-family:var(--hand);font-size:19px;color:var(--peach-deep);margin-top:6px}
+.hero h1{font-family:var(--hand);font-size:clamp(36px,10.5vw,54px);line-height:1.18;color:var(--ink);margin-top:4px;
+  background:url(img/wash-blush.png) no-repeat center/min(420px,100%) 140%;padding:16px 0}
+.hero .sub{font-size:19px;color:var(--soft);margin-top:8px;max-width:440px;margin-inline:auto}
 .mantra{margin:24px auto 0;max-width:420px;font-weight:700;font-size:19px;line-height:1.8;color:var(--ink);
-  background:rgba(201,211,176,.45);border-radius:28px;padding:14px 22px}
+  background:url(img/wash-sage.png) no-repeat center/115% 190%;border-radius:28px;padding:16px 22px}
 .hero .photo{margin-top:26px;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:center 60%;
   -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 22%);mask-image:linear-gradient(180deg,transparent 0,#000 22%)}
 .start{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:var(--peach-deep);color:#fff;text-decoration:none;
@@ -113,7 +116,7 @@ h1,h2,h3{margin:0;line-height:1.3;text-wrap:balance;font-weight:700}
 .wa-btn svg{flex:0 0 22px}
 
 .about{display:grid;grid-template-columns:132px 1fr;gap:16px;align-items:center;background:var(--card);border:1px solid var(--blush);border-radius:var(--r);padding:12px}
-.about img{width:132px;height:168px;border-radius:16px;object-fit:cover;object-position:center 15%}
+.about img{width:132px;height:168px;border-radius:16px;object-fit:cover;object-position:center 25%}
 .about div{min-width:0}
 
 .services{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -127,6 +130,30 @@ h1,h2,h3{margin:0;line-height:1.3;text-wrap:balance;font-weight:700}
 .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-size:16px}
 .links a{color:var(--peach-deep);font-weight:700}
 
+.ch{position:relative;isolation:isolate}
+main{overflow-x:clip}
+.ch::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:230px;height:230px;top:6px;right:-70px;
+  background:url(img/wash-blush.png) no-repeat center/contain;opacity:.9}
+.ch:nth-of-type(3n+2)::before{background-image:url(img/wash-sage.png);right:auto;left:-80px}
+.ch:nth-of-type(3n)::before{background-image:url(img/wash-sun.png)}
+.box,.step,.facts div,.services div,.toc a,.about,.door-note{background:rgba(255,251,247,.82)}
+.pull{background:url(img/wash-blush.png) no-repeat center/112% 160%;background-color:transparent}
+.pull.sage{background:url(img/wash-sage.png) no-repeat center/112% 160%}
+
+/* LETTER */
+.letter{position:relative;margin:34px 0 8px;padding:26px 22px 24px;border-radius:28px;background:rgba(255,251,247,.9);
+  box-shadow:0 10px 30px rgba(201,119,79,.12);display:flex;flex-direction:column;gap:12px}
+.letter::before{content:"";position:absolute;inset:-26px -18px auto auto;width:150px;height:150px;z-index:-1;
+  background:url(img/wash-peach.png) no-repeat center/contain}
+.letter .portrait{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:center 22%;margin:-70px auto 0;
+  border:5px solid #fff;box-shadow:0 0 0 7px rgba(228,160,127,.35)}
+.letter .eyebrow{text-align:center}
+.letter .hello{font-family:var(--hand);font-size:26px;color:var(--peach-deep)}
+.letter p{font-size:18px}
+.letter .sign{font-family:var(--hand);font-size:24px;line-height:1.35;color:var(--ink);text-align:left}
+.letter .sign small{display:block;font-family:var(--body);font-size:14px;color:var(--soft)}
+.ps{font-weight:700;font-size:19px;line-height:1.6;text-align:center;color:var(--sage-ink);padding:18px 14px;
+  background:url(img/wash-sage.png) no-repeat center/105% 150%}
 footer{padding-block:36px 20px;text-align:center;font-family:var(--hand);font-size:24px;color:var(--peach-deep)}
 footer small{display:block;font-family:var(--body);font-size:13px;color:var(--soft);margin-top:8px}
 
@@ -148,9 +175,10 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
 
 <header class="hero">
   <div class="wrap">
-    <img class="logo" src="img/logo.jpg" alt="הלוגו של רותם סגל, מאירה לכם את הדרך" width="236" height="236">
-    <h1>לילה טוב<br>מתחיל בהיכרות</h1>
-    <p class="sub">המדריך הראשון שלך להבנת השינה של התינוק, כבר מגיל לידה</p>
+    <img class="logo" src="img/logo-hd.png" alt="הלוגו של רותם סגל, מאירה לכם את הדרך" width="377" height="377">
+    <p class="kicker">לילה טוב מתחיל בהיכרות</p>
+    <h1>מה התינוק שלך<br>מנסה לספר לך?</h1>
+    <p class="sub">מדריך קטן ואישי להבנת השינה של התינוק, כבר מגיל לידה. מתנה ממני אלייך.</p>
     <p class="mantra">לא כל בכי הוא עייפות,<br>לא כל יקיצה היא בעיה,<br>ולא כל תינוק זקוק לאותו פתרון.</p>
     <p class="ask">איפה את עכשיו?</p>
     <div class="doors">
@@ -176,6 +204,16 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   </div>
 </div>
 
+<section class="letter" id="letter" aria-label="מכתב מרותם">
+  <img class="portrait" src="img/rotem-portrait.jpg" alt="רותם סגל" width="714" height="683">
+  <span class="eyebrow">לפני שמתחילים, כמה מילים ממני</span>
+  <p class="hello">אמא יקרה,</p>
+  <p>הלילות הראשונים עם תינוק יכולים להיות הכי מרגשים, וגם הכי מבלבלים. השקט של שלוש בבוקר, הלב שמתכווץ מכל בכי, והשאלה שחוזרת שוב ושוב: האם אני עושה את זה נכון?</p>
+  <p>כתבתי את המדריך הזה בשבילך, כדי שיהיה לך משהו קטן ביד ברגעים האלה. הוא לא מבקש ממך לעשות הכול נכון. הוא מזמין אותך לעצור, להתבונן ולהכיר את התינוק שלך. כי אף אחד לא יכיר אותו טוב ממך.</p>
+  <p>ואם בדרך תרגישי שאת צריכה יד מכוונת, אני כאן. אפשר פשוט לכתוב לי.</p>
+  <p class="sign">באהבה,<br>רותם<small>מדריכת הורים ויועצת שינה, וגם אמא</small></p>
+</section>
+
 <nav class="toc" aria-label="תוכן המדריך">
   <h2>מה במדריך</h2>
   <ol>
@@ -198,7 +236,7 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   <p>אנחנו מתכוננות ללידה, בוחרות עגלה, מיטה ובגדים קטנטנים. אבל כמה מאיתנו באמת מתכוננות ליום שאחרי? לרגעים שבהם התינוק בוכה ואנחנו לא בטוחות למה, להרדמות שמתארכות, ליקיצות בלילה ולשאלה שעולה שוב ושוב: ״איך אני יודעת מה התינוק שלי צריך?״</p>
   <p class="pull">אז קודם כול, חשוב לי שתדעי:<br>את לא אמורה לדעת הכול מהרגע הראשון.</p>
   <div class="about">
-    <img src="img/rotem.jpg" alt="רותם סגל" loading="lazy">
+    <img src="img/rotem-portrait.jpg" alt="רותם סגל" loading="lazy">
     <div><p>אני רותם סגל, מדריכת הורים ויועצת שינה, גננת ואשת חינוך עם מעל 10 שנות ניסיון, וגם אמא בעצמי.</p></div>
   </div>
   <p>אני מאמינה שהורות לא מתחילה בשיטות ובכללים, אלא בהיכרות, בהקשבה ובהבנה של הצרכים של התינוק ושל המשפחה כולה.</p>
@@ -356,6 +394,7 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   </div>
   <p class="pull">לכל שלב בהורות יש את האתגרים שלו.<br>ואתם לא צריכים לעבור אותם לבד.</p>
   <p>אשמח להכיר אתכם, לשמוע על המשפחה שלכם ולחשוב יחד איך אפשר להקל, לדייק ולהאיר את הדרך.</p>
+  <p class="ps">ועוד משהו קטן ממני, לפני שנפרדות:<br>תהיי עדינה עם עצמך. את לומדת, הוא לומד,<br>ויחד אתם מתחילים להכיר.</p>
   <div class="contact">
     <span class="name">רותם סגל</span>
     <span>מדריכת הורים ויועצת שינה</span>
