@@ -10,9 +10,11 @@ html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 body{font-family:var(--body);color:var(--ink);direction:rtl}
 .page{position:relative;overflow:hidden;break-after:page;page-break-after:always;
   background:
-    radial-gradient(ellipse 60% 40% at 85% 8%, rgba(247,220,203,.9), transparent 70%),
-    radial-gradient(ellipse 55% 35% at 10% 95%, rgba(213,221,191,.7), transparent 70%),
-    radial-gradient(ellipse 50% 30% at 15% 20%, rgba(246,227,214,.8), transparent 70%),
+    url(../img/wash-peach.png) no-repeat right -12% top -8%/52% auto,
+    url(../img/wash-sage.png) no-repeat left -14% bottom -10%/55% auto,
+    url(../img/wash-sun.png) no-repeat left -8% top -5%/34% auto,
+    url(../img/wash-blush.png) no-repeat right -16% bottom 18%/40% auto,
+    url(../img/grain.png),
     var(--paper)}
 .page:last-child{break-after:auto;page-break-after:auto}
 .hand{font-family:var(--hand)}
