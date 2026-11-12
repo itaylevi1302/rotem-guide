@@ -148,6 +148,17 @@ main{overflow-x:clip}
 .letter .portrait{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:center 22%;margin:-70px auto 0;
   border:5px solid #fff;box-shadow:0 0 0 7px rgba(228,160,127,.35)}
 .letter .eyebrow{text-align:center}
+.voice{display:flex;align-items:center;gap:14px;background:url(img/wash-blush.png) no-repeat center/115% 200%;border-radius:99px;padding:10px 16px 10px 12px}
+.vbtn{flex:0 0 54px;height:54px;border-radius:50%;border:0;background:var(--peach-deep);color:#fff;display:grid;place-items:center;cursor:pointer;
+  box-shadow:0 6px 16px rgba(201,119,79,.35)}
+.vbtn:focus-visible{outline:3px solid var(--sage-ink);outline-offset:3px}
+.vbtn .i-pause,.voice.playing .vbtn .i-play{display:none}
+.voice.playing .vbtn .i-pause{display:block}
+.vmeta{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+.vmeta b{font-size:17px}
+.vbar{height:6px;border-radius:99px;background:rgba(201,119,79,.2);overflow:hidden;cursor:pointer;direction:ltr}
+.vbar span{display:block;height:100%;width:0;background:var(--peach-deep);border-radius:99px}
+.vtime{font-size:14px;color:var(--soft)}
 .letter .hello{font-family:var(--hand);font-size:26px;color:var(--peach-deep)}
 .letter p{font-size:18px}
 .letter .sign{font-family:var(--hand);font-size:24px;line-height:1.35;color:var(--ink);text-align:left}
@@ -207,6 +218,18 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
 <section class="letter" id="letter" aria-label="מכתב מרותם">
   <img class="portrait" src="img/rotem-portrait.jpg" alt="רותם סגל" width="714" height="683">
   <span class="eyebrow">לפני שמתחילים, כמה מילים ממני</span>
+  <div class="voice" id="voice">
+    <button type="button" class="vbtn" id="vbtn" aria-label="השמעת ההקלטה של רותם">
+      <svg class="i-play" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>
+      <svg class="i-pause" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="13.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/></svg>
+    </button>
+    <div class="vmeta">
+      <b>הקשיבי לי רגע</b>
+      <div class="vbar" id="vbar"><span id="vfill"></span></div>
+      <span class="vtime" id="vtime">הודעה קולית ממני אלייך</span>
+    </div>
+    <audio id="vaudio" src="audio/rotem-hello.m4a" preload="metadata"></audio>
+  </div>
   <p class="hello">אמא יקרה,</p>
   <p>הלילות הראשונים עם תינוק יכולים להיות הכי מרגשים, וגם הכי מבלבלים. השקט של שלוש בבוקר, הלב שמתכווץ מכל בכי, והשאלה שחוזרת שוב ושוב: האם אני עושה את זה נכון?</p>
   <p>כתבתי את המדריך הזה בשבילך, כדי שיהיה לך משהו קטן ביד ברגעים האלה. הוא לא מבקש ממך לעשות הכול נכון. הוא מזמין אותך לעצור, להתבונן ולהכיר את התינוק שלך. כי אף אחד לא יכיר אותו טוב ממך.</p>
@@ -426,6 +449,21 @@ footer small{display:block;font-family:var(--body);font-size:13px;color:var(--so
   function count(name,title){
     try{ if(window.goatcounter && goatcounter.count) goatcounter.count({path:name,title:title||name,event:true}) }catch(e){}
   }
+  // voice note
+  (function(){
+    var a=document.getElementById('vaudio'), box=document.getElementById('voice'), btn=document.getElementById('vbtn'),
+        fill=document.getElementById('vfill'), bar=document.getElementById('vbar'), tm=document.getElementById('vtime'), counted=false;
+    if(!a) return;
+    function fmt(t){t=Math.max(0,Math.round(t||0));return Math.floor(t/60)+':'+('0'+t%60).slice(-2)}
+    a.addEventListener('loadedmetadata',function(){ if(isFinite(a.duration)) tm.textContent='הודעה קולית ממני אלייך · '+fmt(a.duration) });
+    a.addEventListener('timeupdate',function(){ if(a.duration){ fill.style.width=(a.currentTime/a.duration*100)+'%'; tm.textContent='⁦'+fmt(a.currentTime)+' / '+fmt(a.duration)+'⁩' } });
+    a.addEventListener('play',function(){ box.classList.add('playing'); btn.setAttribute('aria-label','השהיית ההקלטה'); if(!counted){counted=true;count('audio-play','השמעת ההקלטה של רותם')} });
+    a.addEventListener('pause',function(){ box.classList.remove('playing'); btn.setAttribute('aria-label','השמעת ההקלטה של רותם') });
+    a.addEventListener('ended',function(){ fill.style.width='100%'; count('audio-complete','האזנה עד הסוף') });
+    btn.addEventListener('click',function(){ a.paused ? a.play() : a.pause() });
+    bar.addEventListener('click',function(e){ var r=bar.getBoundingClientRect(); if(a.duration) a.currentTime=(e.clientX-r.left)/r.width*a.duration });
+  })();
+
   if(GC_CODE){
     var s=document.createElement('script'); s.async=true; s.src='https://gc.zgo.at/count.js';
     s.setAttribute('data-goatcounter','https://'+GC_CODE+'.goatcounter.com/count');
