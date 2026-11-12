@@ -5,7 +5,7 @@
 .page{width:70mm;height:100mm;padding:4.5mm 4.5mm 4mm;display:flex;flex-direction:column;gap:1.3mm}
 .top{display:flex;align-items:center;gap:2mm}
 .top img{width:15mm;height:15mm;flex:0 0 15mm}
-h1{font-family:var(--hand);font-size:3.9mm;line-height:1.25;color:var(--ink)}
+h1{font-family:var(--hand);font-size:4.1mm;line-height:1.3;color:var(--ink);text-align:center}
 h1 em{font-style:normal;color:var(--deep)}
 ol{list-style:none;display:flex;flex-direction:column;gap:1.1mm;margin-top:.5mm}
 li{display:flex;gap:1.6mm;align-items:flex-start;background:rgba(255,251,247,.82);border-radius:2.2mm;padding:.9mm 1.8mm}
@@ -15,16 +15,16 @@ li b{font-size:2.85mm;font-weight:800}
 li span{font-size:2.45mm;color:var(--soft);font-weight:600}
 li.me{background:rgba(247,220,203,.85)}
 .m{font-size:2.75mm;line-height:1.45;text-align:center;font-weight:800;padding:1.2mm 2mm;background:url(../img/wash-sage.png) no-repeat center/110% 170%}
-.bottom{margin-top:auto;display:flex;gap:2mm;align-items:center;justify-content:space-between;border-top:.25mm dashed var(--peach);padding-top:1.3mm}
-.bottom div{display:flex;flex-direction:column;line-height:1.35}
-.bottom b{font-size:2.75mm}
-.bottom span{font-size:2.35mm;color:var(--soft);font-weight:600}
-.bottom .tag{font-family:var(--hand);color:var(--deep);font-size:2.6mm}
-.bottom img{width:13mm;height:13mm;flex:0 0 13mm}
+.bottom{margin-top:auto;display:flex;gap:1.5mm;align-items:center;justify-content:space-between}
+.bottom .lg{width:26mm;height:26mm;flex:0 0 26mm;margin:-1.5mm -1mm -.5mm 0}
+.bottom .ct{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1.3;gap:.6mm}
+.bottom .ct span{font-size:2.3mm;color:var(--soft);font-weight:700}
+.bottom .ct b{font-size:2.7mm}
+.bottom .qr{width:14mm;height:14mm;flex:0 0 14mm}
 </style>
 </head><body>
 <div class="page">
-  <div class="top"><img src="../img/logo-hd.png" alt="רותם סגל"><h1>5 דברים שכדאי לזכור <em>בחודשיים הראשונים</em> עם הבייבי <span style="color:var(--deep);font-family:var(--body)">♥</span></h1></div>
+  <h1>5 דברים שכדאי לזכור <em>בחודשיים הראשונים</em> עם הבייבי <span style="color:var(--deep);font-family:var(--body)">♥</span></h1>
   <ol>
     <li><i>1</i><div><b>להקשיב לבייבי, לא רק לשעון</b><span>לזהות סימני רעב, עייפות וצורך בקרבה.</span></div></li>
     <li><i>2</i><div><b>ידיים הן לא הרגל רע</b><span>מגע, חיבוק וקרבה מעניקים ביטחון.</span></div></li>
@@ -34,8 +34,9 @@ li.me{background:rgba(247,220,203,.85)}
   </ol>
   <p class="m">לא צריך להיות אמא מושלמת.<br>צריך להכיר, להקשיב ולגדול יחד.</p>
   <div class="bottom">
-    <div><b>רותם סגל | מדריכת הורים ויועצת שינה</b><span class="tag">מאירה לכם את הדרך ✨</span><span dir="ltr" style="text-align:right">052-4700409</span></div>
-    <img src="../qr/qr-rotem-guide-logo.png" alt="">
+    <img class="lg" src="../img/logo-hd.png" alt="רותם סגל, מדריכת הורים ויועצת שינה, מאירה לכם את הדרך">
+    <div class="ct"><span>המדריך המלא<br>ושאלות בוואטסאפ</span><b dir="ltr">052-4700409</b></div>
+    <img class="qr" src="../qr/qr-rotem-guide-logo.png" alt="">
   </div>
 </div>
 </body></html>
