@@ -1,43 +1,41 @@
 <!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><title>מגנט 7x10</title>
 <link rel="stylesheet" href="common.css">
 <style>
-/* bleed: 0mm = exact 70x100; 3mm = 76x106 with background to the edge */
 @page{size:70mm 100mm;margin:0}
-.page{width:70mm;height:100mm;padding:5mm 5mm 4.5mm;display:flex;flex-direction:column;gap:1.5mm}
-.head{display:flex;align-items:center;gap:2.4mm}
-.head{justify-content:center}.head img{width:20mm;height:20mm}
-.head div{display:flex;flex-direction:column;line-height:1.25}
-.head b{font-size:3.4mm}
-.head span{font-size:2.5mm;color:var(--soft);font-weight:600}
-h1{font-family:var(--hand);font-size:4.6mm;color:var(--sage-ink);line-height:1.15;text-align:center}
-.k{font-size:2.9mm;font-weight:800;color:var(--deep)}
-.cues{display:flex;flex-wrap:wrap;gap:1.2mm}
-.cues span{font-size:2.5mm;font-weight:700;background:var(--card);border:.25mm solid var(--peach);border-radius:99px;padding:.3mm 1.8mm}
-.qs{display:flex;flex-direction:column;gap:1.2mm}
-.qs div{display:flex;gap:1.6mm;align-items:center;font-size:3.05mm;font-weight:700;background:var(--card);border-radius:2.5mm;padding:.75mm 2mm}
-.qs i{font-style:normal;flex:0 0 4mm;height:4mm;border-radius:50%;background:var(--peach);color:#fff;display:grid;place-items:center;font-size:2.4mm;font-weight:800}
-.m{font-size:2.75mm;line-height:1.45;text-align:center;font-weight:700;background:rgba(213,221,191,.75);border-radius:3mm;padding:1mm 2mm}
-.bottom{margin-top:auto;display:flex;gap:2.5mm;align-items:center;background:#fff;border-radius:3mm;padding:1.2mm}
-.bottom img{width:18mm;height:18mm}
-.bottom div{display:flex;flex-direction:column;font-size:2.55mm;line-height:1.35;font-weight:600}
-.bottom b{font-size:2.9mm}
-.ltr{direction:ltr;unicode-bidi:isolate;text-align:right;font-weight:800;font-size:3.1mm}
+.page{width:70mm;height:100mm;padding:4.5mm 4.5mm 4mm;display:flex;flex-direction:column;gap:1.3mm}
+.top{display:flex;align-items:center;gap:2mm}
+.top img{width:15mm;height:15mm;flex:0 0 15mm}
+h1{font-family:var(--hand);font-size:3.9mm;line-height:1.25;color:var(--ink)}
+h1 em{font-style:normal;color:var(--deep)}
+ol{list-style:none;display:flex;flex-direction:column;gap:1.1mm;margin-top:.5mm}
+li{display:flex;gap:1.6mm;align-items:flex-start;background:rgba(255,251,247,.82);border-radius:2.2mm;padding:.9mm 1.8mm}
+li i{font-style:normal;flex:0 0 3.8mm;height:3.8mm;margin-top:.3mm;border-radius:50%;background:var(--peach);color:#fff;display:grid;place-items:center;font-size:2.3mm;font-weight:800}
+li div{display:flex;flex-direction:column;line-height:1.3}
+li b{font-size:2.85mm;font-weight:800}
+li span{font-size:2.45mm;color:var(--soft);font-weight:600}
+li.me{background:rgba(247,220,203,.85)}
+.m{font-size:2.75mm;line-height:1.45;text-align:center;font-weight:800;padding:1.2mm 2mm;background:url(../img/wash-sage.png) no-repeat center/110% 170%}
+.bottom{margin-top:auto;display:flex;gap:2mm;align-items:center;justify-content:space-between;border-top:.25mm dashed var(--peach);padding-top:1.3mm}
+.bottom div{display:flex;flex-direction:column;line-height:1.35}
+.bottom b{font-size:2.75mm}
+.bottom span{font-size:2.35mm;color:var(--soft);font-weight:600}
+.bottom .tag{font-family:var(--hand);color:var(--deep);font-size:2.6mm}
+.bottom img{width:13mm;height:13mm;flex:0 0 13mm}
 </style>
 </head><body>
 <div class="page">
-  <div class="head"><img src="../img/logo-hd.png" alt="רותם סגל"></div>
-  <h1>רגע של התבוננות</h1>
-  <p class="k">סימני עייפות אפשריים:</p>
-  <div class="cues"><span>פיהוקים</span><span>הסטת מבט</span><span>ירידה בעניין</span><span>אי־שקט</span><span>קושי להירגע</span></div>
-  <p class="k">לפני שמרדימים, שאלי את עצמך:</p>
-  <div class="qs">
-    <div><i>1</i>מתי הוא ישן לאחרונה?</div>
-    <div><i>2</i>מתי הוא אכל?</div>
-    <div><i>3</i>מה קרה סביבו עכשיו?</div>
-  </div>
+  <div class="top"><img src="../img/logo-hd.png" alt="רותם סגל"><h1>5 דברים שכדאי לזכור <em>בחודשיים הראשונים</em> עם הבייבי <span style="color:var(--deep);font-family:var(--body)">♥</span></h1></div>
+  <ol>
+    <li><i>1</i><div><b>להקשיב לבייבי, לא רק לשעון</b><span>לזהות סימני רעב, עייפות וצורך בקרבה.</span></div></li>
+    <li><i>2</i><div><b>ידיים הן לא הרגל רע</b><span>מגע, חיבוק וקרבה מעניקים ביטחון.</span></div></li>
+    <li><i>3</i><div><b>שינה היא תהליך שמתפתח</b><span>יקיצות תכופות וצורך בעזרה הם טבעיים.</span></div></li>
+    <li><i>4</i><div><b>התפתחות מתחילה בדברים הקטנים</b><span>זמן בטן, קשר עין, דיבור ושירה.</span></div></li>
+    <li class="me"><i>5</i><div><b>גם את חשובה <span style="color:var(--deep);font-family:var(--body)">♥</span></b><span>לנוח, לבקש עזרה ולתת לעצמך זמן להסתגל.</span></div></li>
+  </ol>
+  <p class="m">לא צריך להיות אמא מושלמת.<br>צריך להכיר, להקשיב ולגדול יחד.</p>
   <div class="bottom">
+    <div><b>רותם סגל | מדריכת הורים ויועצת שינה</b><span class="tag">מאירה לכם את הדרך ✨</span><span dir="ltr" style="text-align:right">052-4700409</span></div>
     <img src="../qr/qr-rotem-guide-logo.png" alt="">
-    <div><b>המדריך המלא בסריקה</b><span>שאלה? כתבי לי בוואטסאפ</span><span class="ltr">052-4700409</span></div>
   </div>
 </div>
 </body></html>
